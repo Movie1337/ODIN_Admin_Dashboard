@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.container__backgrounds {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 152px auto;
+}
+
+.background__navigation {
+  background-color: rgb(0, 119, 255);
+  height: auto;
+  grid-row: span 2;
+}
+
+.background__search {
+  background-color: rgb(255, 255, 255);
+  width: auto;
+}
+
+.background__info {
+  background-color: rgb(197, 212, 219);
+  width: auto;
+  grid-column: 2;
+}
+
+.navigation__panel {
+  padding: 20px;
+}
+
+.navigation__logo {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+
+.navigation__menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__item {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.menu__img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.menu__link:hover {
+  color: rgb(255, 188, 43);
+}
+
+.menu__item--setting {
+  margin-top: 40px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.search__top {
+  display: flex;
+  margin: 10px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search__img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.search__input {
+  border: none;
+  width: 500px;
+  height: 25px;
+  background-color: rgb(197, 212, 219);
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.profile__notification {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.profile__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.search__bottom {
+  display: flex;
+  margin-left: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile__img--img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.search__buttons {
+  width: 350px;
+}
+
+.search__button {
+  border: none;
+  width: 80px;
+  height: 30px;
+  background-color: rgb(0, 119, 255);
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  margin-right: 25px;
+}
+
+.search__button:hover {
+  background-color: rgb(0, 119, 255);
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(0, 119, 255);
+  cursor: pointer;
+}
+
+.background__info {
+  display: grid;
+  grid-template-columns: 750px auto;
+  grid-template-rows: 380px auto;
+  padding: 40px 20px;
+}
+
+.info__projects {
+  grid-row: span 2;
+}
+
+.info__trending {
+  width: auto;
+  grid-column: 2;
+}
+
+.info__projects--list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.info__projects--item {
+  width: 350px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 5px solid rgb(255, 188, 43);
+}
+
+.info__projects--item:hover {
+  border: 3px solid rgb(0, 119, 255);
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+.info__projects--item h4 {
+  margin-bottom: 5px;
+}
+
+.info__projects--item p {
+  font-weight: 500;
+}
+
+.info__projects--imgs {
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 180px;
+}
+
+.info__projects--img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.info__announcements--list {
+  list-style: none;
+  width: 300px;
+  height: 320px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.info__announcements--item {
+  width: 250px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.info__announcements--item h4 {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.info__announcements--item p {
+  font-weight: 500;
+  font-size: 12px;
+  color: grey;
+}
+
+.info__announcements--item:last-child {
+  border-bottom: none;
+}
+
+.info__trending--list {
+  list-style: none;
+  width: 300px;
+  height: 260px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.info__trending--item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info__trending--img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.info__trending--text b {
+  font-size: 15px;
+}
+
+.info__trending--text p {
+  font-weight: 400;
+}
